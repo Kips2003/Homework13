@@ -161,10 +161,11 @@ main{
 }
 .sec-one-sign form{
     display: flex;
+    position: relative;
     column-gap: 24px;
 }
 .sec-one-sign button{
-    width: 100%;
+    width: 15%;
     background-color: #2B1B12;
     color: #FFF;
     border: none;
@@ -173,6 +174,9 @@ main{
     font-size: 18px;
     font-weight: 600;
     line-height: 21.94px;
+}
+.sec-one-sign input{
+    width: 100%;
 }
 .sec-two{
     display: flex;
@@ -273,7 +277,7 @@ main{
 }
 .reasons{
     display: flex;
-    column-gap: 45px;
+    column-gap: 3.1vw;
 }
 .reason{
     display: flex;
@@ -459,8 +463,10 @@ main{
     background-color: #DDC7BB;
     border-radius: 18px;
     max-width: 382px;
+    width: 100%;
 }
 .review-photo{
+    width: 100%;
     border-radius: 18px;
 }
 .person{
@@ -686,4 +692,172 @@ main{
 }
 .footer-content .logo{
     width: 250px;
+}
+.burgerbar{
+    display: none;
+}
+@media (max-width: 1024px){
+    .links{
+        column-gap: 40px;
+    }
+    .reviews{
+        flex-wrap: wrap;
+        row-gap: 30px;
+        justify-content: center;
+        column-gap: 30px;
+    }
+    .residences{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+    .sec-two-wraper{
+        flex-direction: column;
+        align-items: center;
+        row-gap: 50px;
+    }
+    .content-header h2{
+        text-align: center;
+    }
+    .content-header{
+        width: 100%;
+    }
+    .content-header p{
+        width: 100%;
+        text-align: center;
+    }
+    .sec-two-photo{
+        width: 100%;
+    }
+    .sec-two-content{
+        width: 100%;
+    }
+}
+@media (max-width: 900px){
+    .navigation{
+        display: none;
+    }
+    .header-wraper .logo{
+        order: 1;
+    }
+    .search-acc{
+        order: 3;
+    }
+    .burgerbar{
+        display: block;
+        order: 2;
+        background-color: #2B1B12;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+    }
+    .burgerbar a{
+        color: #FFF;
+        font-size: 24px;
+    }
+}
+@media (max-width: 750px){
+    .reasons{
+        flex-direction: column;
+        row-gap: 30px;
+    }
+    .sec-one-wraper{
+        flex-direction: column;
+    }
+    .sec-one-photo{
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+        height: 500px;
+    }
+    .sec-one{
+        padding-top: 40px;
+        padding-bottom: 100px;
+        flex-direction: column;
+    }
+    main{
+        padding-top: 147px;
+    }
+    .sec-one-sign{
+        transform: translate(5.5%, 400%);
+    }
+    .sec-two{
+        padding-top: 150px;
+    }
+    .footer-content{
+        flex-direction: column;
+    }
+    .footer-content .logo{
+        width: 100%;
+        row-gap: 30px;
+        margin-bottom: 50px;
+    }
+}
+@media (max-width: 580px){
+    .links ul{
+        display: none;
+    }
+    .links{
+        flex-direction: column;
+    }
+    .sec-six-wraper{
+        width: 90%;
+    }
+    .sec-one-sign form{
+        flex-direction: column;
+        row-gap: 30px;
+    }
+    .sec-one-sign{
+        flex-direction: column;
+        row-gap: 30px;
+        transform: translate(0%,190%);
+    }
+    .sec-one-sign button{
+        width: 100%;
+        height: 50px;
+    }
+    .sec-two{
+        padding-top: 500px;
+    }
+    .sec-one-title{
+        align-items: center;
+    }
+    .sec-one-title h2{
+        text-align: center;
+        font-size: 45px;
+    }
+    .sec-one-title h3{
+        text-align: center;
+        font-size: 35px;
+        line-height: 20px;
+    }
+    .title-p{
+        text-align: center;
+        font-size: 16px;
+    }
+    .search-acc{
+        display: none   ;
+    }
+    .sec-one-button{
+        width: 100%;
+    }
+    .sec-one{
+        justify-content: center;
+        align-items: center;
+    }
+    .sec-one-wraper{
+        justify-content: center;
+    }
+    .sec-three-title{
+        width: 90%;
+    }
+    .sec-one-title{
+        width: 70vw;
+    }
+    .title-p{
+        width: 100%;
+    }
 }
